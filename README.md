@@ -4,12 +4,44 @@ Brunch on Asteroids
 ## Usage
 
 1. Start new app
-``brunch new YourAppName -s https://github.com/exlee/brunch-on-asteroids``
-2. Generate style file
-``brunch generate bootstrap THEME``
-3. Generate index.jade, init.coffee by ``brunch generate quickstart YourAppName``
+
+`$ brunch new YourAppName -s https://github.com/exlee/brunch-on-asteroids`
+
+2. Generate style file 
+
+`$ scaffolt bootstrap THEME`
+
+3. Generate index.jade, init.coffee by: 
+
+`$ scaffolt quickstart YourAppName``
 
 And voila - you're done!  For themes check `/vendor/_bootswatch/` directory. You can also use default one.
+
+```
+28 May 18:03:24 - log: Cloning git repo "https://github.com/exlee/brunch-on-asteroids"...
+28 May 18:03:27 - log: Created skeleton directory layout
+28 May 18:03:27 - log: Installing packages...
+```
+
+### Scaffolt
+
+Use scaffolt (https://github.com/paulmillr/scaffolt) successor or similar:
+
+Install:
+
+`$ npm install -g scaffolt`
+
+Usage:
+
+`$ scaffolt <type> <name> [options]`
+
+`$ scaffolt <type> <name> [options] --revert`
+
+Example: Install 'SuperHero' theme:
+
+`$ scaffolt bootstrap Superhero`
+
+`28 May 18:09:37 - info: create vendor/styles/bootstrap.less`
 
 ## About Brunch on Asteroids
 
